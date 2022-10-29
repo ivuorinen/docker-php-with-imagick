@@ -26,5 +26,8 @@
     ],
     "docker": {
         "enabled": false
+    },
+    "digest": {
+        "enabled": false
     }
 }
