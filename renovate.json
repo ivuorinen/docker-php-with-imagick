@@ -1,33 +1,4 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "separateMajorMinor": false,
-    "extends": [
-        "config:base",
-        ":preserveSemverRanges",
-        ":enableVulnerabilityAlerts",
-        ":semanticCommits",
-        ":labels(dependencies)",
-        "group:all",
-        "schedule:monthly",
-        ":maintainLockFilesMonthly"
-    ],
-    "lockFileMaintenance": {
-        "extends": [
-            "group:all"
-        ],
-        "commitMessageAction": "Update"
-    },
-    "packageRules": [
-        {
-            "matchUpdateTypes": ["minor", "patch"],
-            "matchCurrentVersion": "!/^0/",
-            "automerge": true
-        }
-    ],
-    "docker": {
-        "enabled": false
-    },
-    "digest": {
-        "enabled": false
-    }
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>ivuorinen/.github:renovate-config"]
 }
