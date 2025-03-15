@@ -19,7 +19,7 @@ jobs:
         with:
           name: ivuorinen/docker-php-with-imagick
           username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
           default_branch: main
           tags: "latest,php74"
           cache: ${{ github.event_name != 'schedule' }}
