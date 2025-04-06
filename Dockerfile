@@ -1,4 +1,4 @@
-FROM php:7.4
+FROM php:8.1
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
@@ -9,7 +9,7 @@ RUN echo "" \
   && apt-get update \
   && apt-get install -y \
   libicu-dev libxml2-dev libfreetype6-dev libjpeg62-turbo-dev \
-  libpng-dev libonig-dev libmagickwand-dev python-dev unzip \
+  libpng-dev libonig-dev libmagickwand-dev python-dev-is-python3 unzip \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && docker-php-ext-configure gd --with-freetype --with-jpeg \

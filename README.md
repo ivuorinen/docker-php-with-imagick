@@ -1,6 +1,6 @@
 # docker-php-with-imagick
 
-PHP 7.4 with imagick for specific purposes
+PHP 8.1 with imagick for specific purposes
 
 ## Building locally
 
